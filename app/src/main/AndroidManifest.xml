@@ -30,15 +30,16 @@
         android:label="noTours" >
 
         <!--
-         ** You need to replace the key below with your own key. **
-         The example key below will not be accepted because it is not linked to the
-         certificate which you will use to sign this application.
-         See: https://developers.google.com/maps/documentation/android/start
-         for instructions on how to get your own key.
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
         -->
         <meta-data
-            android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyBID2U177oOZ3djwDerVnbe_Qd9IV0qHV8" />     <!-- debug:AIzaSyAUdUdTXizw5hPRVlFz39lAjbgWsdUVzb4   "AIzaSyC12nPkrPftNYJbXTgk4ucUep8Et1i5xgY"   AIzaSyC12nPkrPftNYJbXTgk4ucUep8Et1i5xgY AIzaSyDC-gfaPEPcHyn49jSAfxlpSe42C0E3V1g "AIzaSyDC-gfaPEPcHyn49jSAfxlpSe42C0E3V1g"   AIzaSyDlTTJWLDK7XEYf-We4l1-rfQfLj6JtUdc "AIzaSyA7z4sVx0Tb8OCfW53XaRNcqq8izdf4k6g" "AIzaSyDD7YTmj1cC57m4ZVCxGtH9xOLOvVc1JEs"/> -->
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
